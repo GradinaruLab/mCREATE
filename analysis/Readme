@@ -29,3 +29,7 @@ heatmap_588-89+library.ipynb
 This script generates a heatmap of amino acid distribution in the diversified region. 
 The raw data is subjected to codon frequency normalization and the standard score is plotted as a heatmap 
 (with options to generate heatmaps before and after normalization).
+
+hammDist.m
+This script is a Matlab function that generates a .txt list of paired sequences with their reverse hamming distance, 
+i.e. number of positions with identical AA. Output may be visualized in Cytoscape software. 

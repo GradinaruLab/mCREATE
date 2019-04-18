@@ -69,7 +69,7 @@ for i = 1:N
    
 end
 
-% make list for output file
+% make list 
 k = 1; % counter
 lengthPep = length(truncatedPep{i});
  
@@ -99,8 +99,8 @@ end
 
 redVect = zeros(pairLength, 1); %stores vector of where redundant sequences are
 
-count = 0; %counts non redundent
-countRedundent = 0; %counts redundent
+count = 0; %counts non redundant
+countRedundent = 0; %counts redundant
 
 
 for i = 1:pairLength
@@ -119,9 +119,9 @@ for i = 1:pairLength
        tf3 = strcmp(seq1, seq4);
        tf4 = strcmp(seq2, seq3);
        
-       if (tf1 && tf2) || (tf3 && tf4) == 1 % if intereaction is redundent
+       if (tf1 && tf2) || (tf3 && tf4) == 1 % if interaction is redundant
 
-           redVect(i) = 1;  % place 1 evertime there is a redundant pair of sequences
+           redVect(i) = 1;  % place 1 every time there is a redundant pair of sequences
            hamPairs{j,1} = ''; % replace second instance with no string
           hamPairs{j,2} = ''; 
           hamPairs{j,3} = 0; %replace hamming dist with 0
@@ -130,7 +130,7 @@ for i = 1:pairLength
    end
 end
 
-% now collating all nonredundnet hamming distance pairs
+% now collating all nonredundant hamming distance pairs
 k = 1; %counter for output matrix
 
 for i = 1:pairLength

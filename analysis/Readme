@@ -2,3 +2,13 @@ The codes given in the Juypter notebooks are "demo" versions with example data o
 Codes should work in windows/mac/linux.
 Python is required to run the codes.
 
+Each notebook perform a given function with the exception of one notebook mentioned below.
+
+mCREATE_supplementary_analysis.ipynb
+This is a compilation of codes performing multiple functions. 
+Each cell is a separate function and the relevant functions are mentioned on top of every cell. 
+The users are required to choose the functions/cells they want and run them separately.
+
+The time required to run these scripts are in the order of 2-5 mins depending on the length of the dataset.
+
+ 

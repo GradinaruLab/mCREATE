@@ -77,7 +77,6 @@ for i = 1:N
     idxRow = minMatIdx(i,:);
     listIdx = find(idxRow);
     for j = listIdx
-        if lengthPep-fullMatrix(i,j)>= hammdist
         outMat{k,1} = truncatedPep{i}; %all the peptides in first column
         outMat{k,2} = truncatedPep{j}; %minimum hamming distance in the second
         outMat{k,3} = lengthPep-fullMatrix(i,j); %length-hamming dist. in third

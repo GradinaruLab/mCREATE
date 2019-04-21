@@ -1,5 +1,5 @@
-The codes given in the Juypter notebooks are "demo" versions with example data or input files in the "example_data" sub-folder. 
-Codes should work in windows/mac/linux.
+The scripts given in the Juypter notebooks are "demo" versions with example data or input files in the "example_data" sub-folder. 
+Scripts should work in windows/mac/linux.
 Python is required to run the scripts (except for hammDist.m , a Matlab function).
 
 Each notebook perform a given function with the exception of one notebook mentioned below.

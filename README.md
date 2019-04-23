@@ -33,16 +33,36 @@ jupyter
 pepars
 ```
 
+### Details
+
+#### Primer_generator_for_11mer_clones_587-590AAV9.ipynb
+This script generates 2 overlapping forward and reverse primers for AAV variants where 11 codons are modified from the parent 
+(as described in the RavindraKumar et al 2019 manuscript, Methods section (unpublished)). These primers are used for cloning AAV variants.
+
+#### Reverse_primer_generator_11mer-spikein_synthetic_lib.ipynb
+This script generates 1 reverse primer and 1 reverse primer with alternate mammalian codon for synthesizing 11 codon modified 
+Spike-in library oligopool. This is then sent to Twist Bioscience for oligopool synthesis.
+
+#### Reverse_primer_generator_7mer_synthetic_lib.ipynb
+This script generates 1 reverse primer and 1 reverse primer with alternate mammalian codon for synthesizing 7 codon modified 
+588-89 library oligopool. This is then sent to Twist Bioscience for oligopool synthesis.
+
+#### heatmap_588-89+library.ipynb
+This script generates a heatmap of amino acid distribution in the diversified region. 
+The raw data is subjected to codon frequency normalization and the standard score is plotted as a heatmap 
+(with options to generate heatmaps before and after normalization).
+
+
 ## Clustering
 
-Clustering analyses use sequence and count data as output from Protfarm, or from manual analysis, to analyze 
+Clustering analyses use sequence and count data as output from Protfarm, or from manual analysis, to investigate families of variants.
 
 ### Prerequisites
 
-Clustering analysis requires Matlab 2018 or later.
+Clustering analysis requires MATLAB (tested on MATLAB R2017b (9.3.0.7135779), 64-bit (maci64)).
 
-### Running
+### Details
 
-####hammDist.m
+#### hammDist.m
 This script is a Matlab function that generates a .txt list of paired sequences with their reverse hamming distance, 
 i.e. number of positions with identical AA. Output may be visualized in Cytoscape software.

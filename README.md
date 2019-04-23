@@ -19,12 +19,14 @@ protfarm
 ```
 
 Pepars and Protfarm are available at their respective GitHub repositories:
-- Pepars: [https://github.com/GradinaruLab/pepars]("https://github.com/GradinaruLab/pepars")
-- Protfarm: [https://github.com/GradinaruLab/protfarm]("https://github.com/GradinaruLab/protfarm")
+- Pepars: [https://github.com/GradinaruLab/pepars](https://github.com/GradinaruLab/pepars)
+- Protfarm: [https://github.com/GradinaruLab/protfarm](https://github.com/GradinaruLab/protfarm)
 
-### Running
+### Scripts
 
-To run an example alignment, see the example script ```alignment/align_and_export.ipynb```. This scripts initializes a Protfarm data workspace, downloads example FASTQ files, aligns them against a template, and calculates and exports the count and enrichment data. For more details on Protfarm workspaces and enrichment, see the [Protfarm]("https://github.com/GradinaruLab/protfarm") repository.
+#### align_and_export.ipynb
+
+This scripts initializes a Protfarm data workspace, downloads example FASTQ files, aligns them against a template, and calculates and exports the count and enrichment data. For more details on Protfarm workspaces and enrichment, see the [Protfarm](https://github.com/GradinaruLab/protfarm) repository.
 
 ## Variant Analysis
 
@@ -42,7 +44,7 @@ jupyter
 pepars
 ```
 
-### Details
+### Scripts
 
 #### mCREATE_supplementary_analysis.ipynb
 This is a compilation of codes performing multiple functions. 
@@ -75,8 +77,11 @@ Clustering analyses use sequence and count data as output from Protfarm, or from
 
 Clustering analysis requires MATLAB (tested on MATLAB R2017b (9.3.0.7135779), 64-bit (maci64)).
 
-### Details
+### Scripts
 
 #### hammDist.m
-This script is a Matlab function that generates a .txt list of paired sequences with their reverse hamming distance, 
+This is a Matlab function that generates a .txt list of paired sequences with their reverse hamming distance, 
 i.e. number of positions with identical AA. Output may be visualized in Cytoscape software.
+
+#### clustering_example.m
+This is a script that runs hammDist (above) using the included example data

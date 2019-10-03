@@ -63,7 +63,7 @@ Spike-in library oligopool. This is then sent to Twist Bioscience for oligopool 
 This script generates 1 reverse primer and 1 reverse primer with alternate mammalian codon for synthesizing 7 codon modified 
 588-89 library oligopool. This is then sent to Twist Bioscience for oligopool synthesis.
 
-#### heatmap_588-89+library.ipynb
+#### heatmap_588-89+library.ipynb (previous heatmap generation method - see heatmap_7mer.ipynb for updated version)
 This script generates a heatmap of amino acid distribution in the diversified region. 
 The raw data is subjected to codon frequency normalization and the standard score is plotted as a heatmap 
 (with options to generate heatmaps before and after normalization).
